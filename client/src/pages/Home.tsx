@@ -511,9 +511,7 @@ export default function Home() {
               </article>
             ))}
           </div>
-          {assetsQuery.isLoading ? (
-            <p className="gallery-status">LOADING SELECTED IMAGES</p>
-          ) : assets.length > 0 ? (
+          {assets.length > 0 ? (
             <div className="asset-gallery" aria-label="Portfolio images">
               {assets.map((asset, index) => (
                 <figure className="asset-card" data-cursor-hover key={asset.id} style={{ transitionDelay: `${index * 70}ms` }}>
@@ -522,9 +520,7 @@ export default function Home() {
                 </figure>
               ))}
             </div>
-          ) : (
-            <p className="gallery-status">YOUR SELECTED IMAGES WILL LIVE HERE.</p>
-          )}
+          ) : null}
           <div className="projects-footnote"><span>01 — 03</span><span>MORE TO COME</span></div>
         </div>
       </section>
