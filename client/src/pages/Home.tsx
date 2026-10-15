@@ -9,12 +9,12 @@ const backgroundImage =
   "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260729_022513_486985a2-ac8c-4278-91a8-071dcd9fcaff.png&w=1280&q=85";
 const portraitImage = "/manus-storage/YoungManinMall-optimized_f03628da.webp";
 
-const siteLinks = ["About Me", "Experience", "Achievements", "Projects", "Skills", "Get in Touch"];
+const siteLinks = ["About Me", "Projects", "Experience", "Achievements", "Skills", "Get in Touch"];
 const aboutParagraphs = [
   "I'm Kushal, a CS student at IARE who enjoys exploring how technology can solve real-world problems. I'm particularly interested in AI, machine learning, computer vision, RAG, and agentic AI, but I'm always curious to learn about things beyond software.",
   "For me, solving meaningful problems starts with being open to learning something new. That mindset led me to explore hardware, sensors, and IoT while working on a project focused on smart EV charging and localized grid management. Our project won first place at a hackathon, and the experience made me even more excited about building solutions that connect software with the physical world.",
   "I've also worked on making diabetic retinopathy screening more accessible and built a satellite imagery segmentation pipeline for flood detection. The latter earned us a Top 10 finish at AISeHack 1.0 at IIITH. More recently, I've been exploring autonomous AI systems through StakeNet, which I presented at a React Hyderabad meetup.",
-  "Outside of tech, I enjoy meeting people, exchanging ideas, and being involved in the community. I also love hosting events at E-Cell and creating spaces where people can connect and collaborate. Having won two hackathons, I'm looking forward to taking on new challenges, learning from others, and building technology that makes a real difference.",
+  "Outside of tech, I enjoy meeting people, exchanging ideas, and being involved in the community. I also love hosting events at E-Cell and creating spaces where people can connect and collaborate. Having won three hackathons, I'm looking forward to taking on new challenges, learning from others, and building technology that makes a real difference.",
 ];
 const projects = [
   {
@@ -385,8 +385,8 @@ export default function Home() {
         <footer className="desktop-footer absolute inset-x-0 bottom-0 z-10 flex items-end justify-between px-6 pb-5 font-hn text-xs leading-relaxed sm:px-10 sm:pb-8 sm:text-sm">
           <div className="footer-left anim-fade-up delay-1400">
             <p>Second-year CS student</p>
-            <p>3x hackathon winner</p>
-            <p>building ai solutions</p>
+            <p>3x Hackathon Winner</p>
+            <p>Building AI solutions</p>
           </div>
           <div className="footer-right anim-fade-up delay-1550 text-right">
             <p>A portfolio by</p>

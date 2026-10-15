@@ -83,7 +83,7 @@ button { color: inherit; font: inherit; }
 .brand { color: #efeee9; opacity: 0; transition: letter-spacing 300ms ease, opacity 300ms ease; }
 .brand:hover { opacity: .68; letter-spacing: .09em; }
 .desktop-links { color: #efeee9; }
-.link-column { display: grid; grid-auto-flow: column; grid-template-columns: repeat(2, max-content); grid-template-rows: repeat(3, auto); column-gap: clamp(1.25rem, 2.5vw, 2.5rem); row-gap: 2px; }
+.link-column { display: grid; grid-template-columns: repeat(3, max-content); grid-template-rows: repeat(2, auto); column-gap: clamp(1.25rem, 2.5vw, 2.5rem); row-gap: 2px; }
 .desktop-link { width: fit-content; color: #efeee9; font-size: 14px; line-height: 1.35; opacity: 0; transition: opacity 300ms ease, transform 300ms cubic-bezier(.22, 1, .36, 1); }
 .desktop-link:hover { opacity: .6; transform: translateX(3px); }
 
@@ -177,7 +177,7 @@ button { color: inherit; font: inherit; }
 .about-photo img { display: block; width: 100%; aspect-ratio: 1.5; object-fit: cover; opacity: 0; transform: translateY(18px); transition: opacity 750ms ease 180ms, transform 850ms cubic-bezier(.22, 1, .36, 1) 180ms; }
 .about-section.is-visible .about-photo img { opacity: 1; transform: translateY(0); }
 .about-copy { display: flow-root; border-top: 1px solid rgb(239 238 233 / 50%); padding-top: 1.15rem; }
-.about-copy p { margin: 0 0 1rem; color: rgb(239 238 233 / 72%); font-size: 13px; line-height: 1.8; opacity: 0; transform: translateY(20px); transition: opacity 580ms ease, transform 700ms cubic-bezier(.22, 1, .36, 1); }
+.about-copy p { margin: 0 0 1.15rem; color: rgb(239 238 233 / 74%); font-size: 15px; line-height: 1.75; opacity: 0; transform: translateY(20px); transition: opacity 580ms ease, transform 700ms cubic-bezier(.22, 1, .36, 1); }
 .about-copy p.is-revealed { opacity: 1; transform: translateY(0); }
 .about-footer { display: flex; justify-content: space-between; gap: 1rem; margin-top: auto; padding-top: 1.5rem; color: rgb(239 238 233 / 46%); font-size: 9px; letter-spacing: .12em; }
 
@@ -423,7 +423,7 @@ button { color: inherit; font: inherit; }
   .about-heading { margin-bottom: 1.8rem; }
   .about-photo { float: none; width: 100%; margin: 0 0 1.5rem; shape-outside: none; shape-margin: 0; }
   .about-copy { padding-top: 1rem; }
-  .about-copy p { font-size: 12px; line-height: 1.75; }
+  .about-copy p { font-size: 13.5px; line-height: 1.75; }
   .about-footer { font-size: 7px; }
   .experience-inner { width: calc(100% - 3rem); padding-block: 1.6rem 2rem; }
   .experience-meta { gap: 1rem; font-size: 8px; }

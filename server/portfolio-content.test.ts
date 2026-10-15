@@ -54,7 +54,7 @@ describe("portfolio contact and projects content", () => {
     expect(homeSource).toContain('label === "Experience" ? "#experience"');
   });
 
-  it("includes the About Me story and routes it from the two-column six-link navigation", () => {
+  it("includes the About Me story and routes it from the three-column six-link navigation", () => {
     const aboutSectionIndex = homeSource.indexOf('ref={aboutRef}');
     const projectsSectionIndex = homeSource.indexOf('ref={projectsRef}');
     const photoStart = homeSource.indexOf('<figure className="about-photo">');
@@ -78,8 +78,8 @@ describe("portfolio contact and projects content", () => {
     expect(photoStart).toBeGreaterThan(-1);
     expect(photoMarkup).not.toContain("figcaption");
     expect(homeSource).not.toContain("2025");
-    expect(homeSource).toContain('const siteLinks = ["About Me", "Experience", "Achievements", "Projects", "Skills", "Get in Touch"]');
-    expect(styleSource).toContain("grid-template-rows: repeat(3, auto)");
+    expect(homeSource).toContain('const siteLinks = ["About Me", "Projects", "Experience", "Achievements", "Skills", "Get in Touch"]');
+    expect(styleSource).toContain("grid-template-rows: repeat(2, auto)");
     expect(homeSource).toContain('querySelectorAll<HTMLElement>(".about-paragraph")');
     expect(homeSource).toContain("paragraphObserver.observe(paragraph)");
     expect(homeSource).toContain('rootMargin: "0px 0px -35% 0px"');
