@@ -91,7 +91,7 @@ export async function getUserByOpenId(openId: string) {
 
 export async function listPortfolioAssets() {
   const db = await getDb();
-  if (!db) throw new Error("Portfolio database is unavailable");
+  if (!db) return [];
   return db.select().from(portfolioAssets).orderBy(desc(portfolioAssets.createdAt), desc(portfolioAssets.id));
 }
 

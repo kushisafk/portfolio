@@ -513,8 +513,6 @@ export default function Home() {
           </div>
           {assetsQuery.isLoading ? (
             <p className="gallery-status">LOADING SELECTED IMAGES</p>
-          ) : assetsQuery.isError ? (
-            <p className="gallery-status" role="status">The image gallery is temporarily unavailable.</p>
           ) : assets.length > 0 ? (
             <div className="asset-gallery" aria-label="Portfolio images">
               {assets.map((asset, index) => (
